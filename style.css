@@ -2,6 +2,7 @@
   --color-comet: #55547A;
   --color-martinique: #353551;
   --color-mulberry: #770737;
+  ---color-black: #000000;
 }
 
 body {
@@ -94,7 +95,11 @@ img {
 
 .content__contact-info-item {
   list-style: none;
-  line-height: 1.5;
+}
+
+.content__contact-info-item span, a {
+  font-size: 18px;
+  color: var(---color-black);
 }
 
 .content__ordered-list:nth-of-type(1) {
@@ -105,22 +110,15 @@ img {
   list-style-type: circle;
 }
 
-@media only screen 
-and (device-width: 390px) 
-and (device-height: 844px) 
-and (-webkit-device-pixel-ratio: 3) { 
-  .content__text-wrapper {
-    padding: 0 20px 0 20px;
-  }
-}
+/* Iphone 12 PRO Breakpoints */
 
 @media only screen 
-and (device-width: 390px) 
-and (device-height: 844px) 
-and (-webkit-device-pixel-ratio: 3) { 
-  .content__info-wrapper {
-    flex-direction: column;
-  }
+  and (device-width: 390px) 
+  and (device-height: 844px) 
+  and (-webkit-device-pixel-ratio: 3) { 
+    .content__text-wrapper {
+      padding: 0 20px 0 20px;
+    }
 }
 
 @media only screen 
@@ -133,6 +131,16 @@ and (-webkit-device-pixel-ratio: 3) {
     margin: 0 auto;
   }
 }
+
+@media only screen 
+and (device-width: 390px) 
+and (device-height: 844px) 
+and (-webkit-device-pixel-ratio: 3) { 
+  .content__info-wrapper {
+    flex-direction: column;
+  }
+}
+
 
 @media only screen 
 and (device-width: 390px) 
@@ -154,4 +162,105 @@ and (-webkit-device-pixel-ratio: 3) {
   }
 }
 
+/* Iphone 14 PRO Breakpoints */
 
+@media only screen 
+  and (device-width: 393px) 
+  and (device-height: 852px) 
+  and (-webkit-device-pixel-ratio: 3) { 
+    .content__text-wrapper {
+      padding: 0 20px 0 20px;
+    }
+}
+
+@media only screen 
+  and (device-width: 393px) 
+  and (device-height: 852px) 
+  and (-webkit-device-pixel-ratio: 3) {
+    .content__info-wrapper {
+      flex-direction: column;
+    }
+}
+
+@media only screen 
+and (device-width: 393px) 
+and (device-height: 852px)
+and (-webkit-device-pixel-ratio: 3) { 
+  .content__image-wrapper {
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+  }
+}
+
+@media only screen 
+and (device-width: 393px) 
+and (device-height: 852px) 
+and (-webkit-device-pixel-ratio: 3) { 
+  .content__contact-info {
+    grid-auto-flow: row;
+    grid-gap: 6px;
+    justify-items: start;
+  }
+}
+
+@media only screen 
+and (device-width: 393px) 
+and (device-height: 852px) 
+and (-webkit-device-pixel-ratio: 3) { 
+  .content__contact-info {
+    grid-auto-flow: row;
+  }
+}
+
+
+/* Iphone 14 PRO Max Breakpoints */
+
+@media only screen 
+  and (device-width: 430px) 
+  and (device-height: 932px) 
+  and (-webkit-device-pixel-ratio: 3) { 
+    .content__text-wrapper {
+      padding: 0 20px 0 20px;
+    }
+}
+
+@media only screen 
+  and (device-width: 430px) 
+  and (device-height: 932px) 
+  and (-webkit-device-pixel-ratio: 3) {
+    .content__info-wrapper {
+      flex-direction: column;
+    }
+}
+
+@media only screen 
+and (device-width: 430px) 
+and (device-height: 932px)
+and (-webkit-device-pixel-ratio: 3) { 
+  .content__image-wrapper {
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+  }
+}
+
+@media only screen 
+and (device-width: 430px) 
+and (device-height: 932px) 
+and (-webkit-device-pixel-ratio: 3) { 
+  .content__contact-info {
+    grid-auto-flow: row;
+    grid-gap: 6px;
+    justify-items: start;
+  }
+}
+
+@media only screen 
+and (device-width: 430px) 
+and (device-height: 932px) 
+and (-webkit-device-pixel-ratio: 3) { 
+  .content__contact-info {
+    grid-auto-flow: row;
+  }
+}
